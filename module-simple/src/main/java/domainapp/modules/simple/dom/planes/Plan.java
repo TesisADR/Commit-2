@@ -41,7 +41,7 @@ import domainapp.modules.simple.types.plan.TipoCobertura;
 
 
 @javax.jdo.annotations.PersistenceCapable(
-    schema = "planes",
+    schema = "Afiliados",
     identityType=IdentityType.DATASTORE)
 @javax.jdo.annotations.Unique(
         name = "Plan_name_UNQ", members = {"name"}
@@ -62,7 +62,7 @@ import domainapp.modules.simple.types.plan.TipoCobertura;
 })
 @javax.jdo.annotations.DatastoreIdentity(strategy=IdGeneratorStrategy.IDENTITY, column="id")
 @javax.jdo.annotations.Version(strategy= VersionStrategy.DATE_TIME, column="version")
-@DomainObject(logicalTypeName = "planes.Plan", entityChangePublishing = Publishing.ENABLED)
+@DomainObject(logicalTypeName = "simple.Plan", entityChangePublishing = Publishing.ENABLED)
 @DomainObjectLayout()
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 @XmlJavaTypeAdapter(PersistentEntityAdapter.class)

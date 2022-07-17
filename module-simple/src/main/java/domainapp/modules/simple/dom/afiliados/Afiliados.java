@@ -31,7 +31,7 @@ import domainapp.modules.simple.types.afiliado.FechaInicio;
 
 @DomainService(
         nature = NatureOfService.VIEW,
-        logicalTypeName = "simple.Afiliado"
+        logicalTypeName = "simple.Afiliados"
 )
 @javax.annotation.Priority(PriorityPrecedence.EARLY)
 @lombok.RequiredArgsConstructor(onConstructor_ = {@Inject} )

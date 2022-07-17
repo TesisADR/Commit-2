@@ -27,7 +27,7 @@ import domainapp.modules.simple.types.plan.TipoCobertura;
 
 @DomainService(
         nature = NatureOfService.VIEW,
-        logicalTypeName = "planes.Planes"
+        logicalTypeName = "simple.Planes"
 )
 @javax.annotation.Priority(PriorityPrecedence.EARLY)
 @lombok.RequiredArgsConstructor(onConstructor_ = {@Inject} )
